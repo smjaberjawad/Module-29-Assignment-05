@@ -8,14 +8,67 @@
     <!-- Raw CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- Tailwind & Daisy UI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
     <!-- Header Starts -->
-    <header>
+    <header class="container mx-auto w-11/12 mt-4 lg:pt-8 lg:w-full">
+
+        <!-- Navigation Bar -->
+        <nav class="mb-4 lg:mb-8">
+            <div class="navbar bg-base-100 p-0">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-0 mr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Destination</li>
+                            <li>Search</li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl font-raleway font-extrabold lg:text-4xl">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-raleway font-medium text-lg lg:flex lg:gap-x-14">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Destination</li>
+                        <li>Search</li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div
+                        class="flex font-raleway text-[#1DD100] font-bold text-xl gap-x-3 border border-[#1DD10066] bg-[#1DD1001A] rounded-xl px-4 py-2 lg:px-8 lg:py-4">
+                        <a href="">Bus</a>
+                        <img src="images/bus-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section
+            class="bg-[url('images/banner.png')] bg-no-repeat bg-center bg-cover rounded-[32px] py-20 lg:py-40">
+            <div class="flex flex-col justify-center items-center m-auto w-4/5 lg:w-1/2">
+                <h1 class="font-raleway text-white font-extrabold text-3xl text-center mb-4 lg:leading-[86px] lg:text-6xl">End-to-End
+                    Travel
+                    with <br> <span class="text-[#1DD100]">P Paribahan</span></h1>
+                <p class="font-inter text-white text-lg text-center mb-8 lg:leading-8">Experience seamless journeys with P Paribahan, offering
+                    end-to-end travel solutions that ensure comfort, reliability, and exceptional service.</p>
+                <a href="#ph_paribahan" class="font-raleway font-bold text-xl bg-[#1DD100] hover:bg-[#1cd100c7] duration-300 rounded-xl px-4 py-2 lg:px-8 lg:py-5">Buy Tickets</a>
+            </div>
+        </section>
 
     </header>
 
