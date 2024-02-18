@@ -143,7 +143,8 @@
                         <div>
                             <div class="flex gap-2 bg-[#1DD10026] rounded-xl px-4 py-3">
                                 <img src="images/seat-green.png" alt="">
-                                <p class="font-inter text-lg font-medium text-[#1DD100]">40 Seats left</p>
+                                <p class="font-inter text-lg font-medium text-[#1DD100]"><span id="left_seats">16</span>
+                                    Seats left</p>
                             </div>
                         </div>
                     </div>
@@ -210,21 +211,21 @@
                                 <p>A</p>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>A1</p>
+                                    A1
                                 </button>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>A2</p>
+                                    A2
                                 </button>
                             </div>
                             <div class="font-inter text-lg font-medium text-[#03071280] flex items-center gap-8">
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>A3</p>
+                                    A3
                                 </button>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>A4</p>
+                                    A4
                                 </button>
                             </div>
                         </div>
@@ -233,21 +234,21 @@
                                 <p>B</p>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>B1</p>
+                                    B1
                                 </button>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>B2</p>
+                                    B2
                                 </button>
                             </div>
                             <div class="font-inter text-lg font-medium text-[#03071280] flex items-center gap-8">
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>B3</p>
+                                    B3
                                 </button>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>B4</p>
+                                    B4
                                 </button>
                             </div>
                         </div>
@@ -256,21 +257,44 @@
                                 <p>C</p>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>C1</p>
+                                    C1
                                 </button>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>C2</p>
+                                    C2
                                 </button>
                             </div>
                             <div class="font-inter text-lg font-medium text-[#03071280] flex items-center gap-8">
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>C3</p>
+                                    C3
                                 </button>
                                 <button
                                     class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
-                                    <p>C4</p>
+                                    C4
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="font-inter text-lg font-medium text-[#03071280] flex items-center gap-8">
+                                <p>D</p>
+                                <button
+                                    class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
+                                    D1
+                                </button>
+                                <button
+                                    class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
+                                    D2
+                                </button>
+                            </div>
+                            <div class="font-inter text-lg font-medium text-[#03071280] flex items-center gap-8">
+                                <button
+                                    class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
+                                    D3
+                                </button>
+                                <button
+                                    class="seat bg-[#F7F8F8] rounded-xl px-11 py-4 hover:bg-[#1DD10026] duration-500">
+                                    D4
                                 </button>
                             </div>
                         </div>
@@ -284,41 +308,54 @@
                     <!-- Confirm Order Section -->
                     <div class="bg-[#F7F8F8] rounded-xl p-8">
                         <div class="font-inter font-semibold flex justify-between pb-4">
-                            <div class="flex gap-1">
+                            <div id="seat_counter_container" class="flex gap-1">
                                 <h4>Seat</h4>
-                                <span class="text-white text-xs p-1 rounded-full bg-[#1DD100]">0</span>
+                                <span id="seat_counter"
+                                    class="text-white text-xs p-1 rounded-full bg-[#1DD100]">0</span>
                             </div>
                             <h4>Class</h4>
                             <h4>Price</h4>
                         </div>
                         <hr>
-                        <div class="font-inter text-[#03071299] pb-4">
-                            <div class="flex justify-between mt-4">
-                                <h4>C2</h4>
-                                <h4>Economy</h4>
-                                <h4>550</h4>
-                            </div>
-                            <div class="flex justify-between mt-4">
-                                <h4>C2</h4>
-                                <h4>Economy</h4>
-                                <h4>550</h4>
-                            </div>
+                        <div id="choosen_seat_container" class="font-inter text-[#03071299] pb-4">
+
                         </div>
                         <hr>
                         <div class="font-inter font-semibold flex justify-between my-4">
                             <h4>Total Price</h4>
-                            <h4>1100</h4>
+                            <h4 id="total_price">0</h4>
                         </div>
-                        <div class="relative flex items-center">
-                            <input
+                        <div id="apply_section" class="relative flex items-center">
+                            <input id="apply_input"
                                 class="px-6 py-5 placeholder:font-inter placeholder:text-[#03071266] placeholder:font-medium rounded-xl w-full"
                                 type="text" placeholder="Have any coupon?">
-                            <button
+                            <button id="apply_button"
                                 class="text-white font-inter font-semibold bg-[#1DD100] px-5 py-3 rounded-lg absolute right-2 hover:bg-[#1cd1008f] duration-500">Apply</button>
                         </div>
                         <div class="font-inter font-semibold flex justify-between mt-6">
                             <h4>Grand Total</h4>
-                            <h4>BDT 1100</h4>
+                            <h4 id="grand_total">0</h4>
+                        </div>
+                        <div>
+                            <button
+                                class="text-white bg-[#1DD100] hover:bg-[#1cd1008f] font-raleway font-extrabold rounded-2xl duration-500 w-full py-5 mt-5"
+                                onclick="my_modal_1.showModal()">Next
+                            </button>
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box flex flex-col justify-center items-center font-roboto py-14">
+                                    <img src="images/success.png" alt="">
+                                    <p class="my-5 text-[#27AE60] text-2xl font-bold">SUCCESS</p>
+                                    <p class="text-center text-xl font-medium">Thank you for Booking Our Bus Seats.
+                                        We are working hard to find the best service and deals for you. </p>
+                                    <p class="text-center text-lg font-light mt-5">Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn px-24 text-white rounded-[32px] bg-[#27AE60] text-xl font-semibold">Continue</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -326,11 +363,6 @@
         </section>
 
     </main>
-
-    <!-- Footer Starts -->
-    <footer>
-
-    </footer>
 
     <!-- Raw JS -->
     <script src="scripts/index.js"></script>
