@@ -1,45 +1,3 @@
-// const seats = document.getElementsByClassName('seat');
-// for (const seat of seats) {
-//     seat.addEventListener('click', function (e) {
-//         let clickCount = 0;
-
-
-//         e.target.setAttribute('disabled', true);
-
-//         e.target.style.backgroundColor = '#1DD100';
-
-//         const choosenSeatContainer = document.getElementById('choosen_seat_container');
-//         const div = document.createElement('div');
-//         div.classList.add('flex', 'justify-between', 'mt-4');
-//         div.innerHTML = `
-//             <h4>${e.target.innerText}</h4>
-//             <h4>Economy</h4>
-//             <h4>550</h4>
-//         `
-//         choosenSeatContainer.appendChild(div);
-
-//         const leftSeatsId = document.getElementById('left_seats');
-//         const leftSeatsText = leftSeatsId.innerText;
-//         const leftSeats = parseInt(leftSeatsText);
-//         const finalSeat = leftSeats - 1;
-//         leftSeatsId.innerText = finalSeat;
-
-//         const seatCounterId = document.getElementById('seat_counter');
-//         const seatCounterText = seatCounterId.innerText;
-//         const seatCounter = parseInt(seatCounterText);
-//         seatCounterId.innerText = seatCounter + 1;
-
-//         clickCount++;
-
-//         if (clickCount >= 4) {
-//             seat.removeEventListener('click', function () {
-
-//             });
-//         }
-//     })
-// }
-
-
 const seats = document.getElementsByClassName('seat');
 let counter = 0;
 
@@ -100,14 +58,14 @@ document.getElementById('apply_button').addEventListener('click', function () {
 
     const applyInputId = document.getElementById('apply_input');
     const applyInputValue = applyInputId.value;
-    if (applyInputValue.toLowerCase() === 'new15') {
+    if (applyInputValue === 'NEW15') {
         let discount = grandTotalBefore * 0.15;
         const newGrandTotal = grandTotalBefore - discount;
         setInnerTextById('grand_total', newGrandTotal);
 
         const applySection = document.getElementById('apply_section');
         applySection.classList.add('hidden');
-    } else if (applyInputValue.toLowerCase() === 'couple 20') {
+    } else if (applyInputValue === 'Couple 20') {
         let discount = grandTotalBefore * 0.2;
         const newGrandTotal = grandTotalBefore - discount;
         setInnerTextById('grand_total', newGrandTotal);
